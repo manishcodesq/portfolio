@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        </style>
-        <link rel="stylesheet" href="style.css">
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
 </head>
+
 <body>
     <div id="header">
         <div class="container">
             <nav>
-                <img src="https://as1.ftcdn.net/jpg/04/26/32/06/1000_F_426320629_cnVFShrEVwpOplyQswl8hGRCv8c4XdQz.webp" alt="ff" class="logo">
+                <img src="https://as1.ftcdn.net/jpg/04/26/32/06/1000_F_426320629_cnVFShrEVwpOplyQswl8hGRCv8c4XdQz.webp"
+                    alt="ff" class="logo">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -22,12 +27,76 @@
                     <li><a href="#">Skills</a></li>
                 </ul>
             </nav>
-           <div class="header-text">
-            <P>Frontend Developer</P>
-           <h1>Hi,I'm <span>Manish</span> <br>Kulkarni </h1>
-        </div>
+            <div class="header-text">
+                <P>Frontend Developer</P>
+                <h1>Hi,I'm <span>Manish</span> <br>Kulkarni </h1>
+            </div>
         </div>
     </div>
-    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1 ">
+                    <img src="images/user.jpg" alt="user">
+                </div>
+                <div class="about-col2 ">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Hi, I'm Manish Kulkarni, a second-year Electronics and Telecommunication Engineering student at
+                        Vishwakarma
+                        Institute of Information Technology, Pune. I have a keen interest in software development,
+                        particularly in DSA, web development, and the MERN stack. My focus is on preparing for software
+                        placements and improving my skills in competitive programming.I'm also an active member of my
+                        college's IoT club, contributing as an activity team member.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents activetab" id="skills">
+                        <ul>
+                            <li><span>Frontend development</span><br>HTML,CSS,JS</li>
+                            <li><span>Programming Languages</span><br>PYTHON,C++,JAVA</li>
+                            <li><span>Data Structures and Algorithms</span><br>In C++</li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Frontend development</span><br>HTML,CSS,JS</li>
+                            <li><span>Programming Languages</span><br>PYTHON,CPP,JAVA</li>
+                            <li><span>Data Structures and Algorithms</span><br>In C++</li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Frontend development</span><br>HTML,CSS,JS</li>
+                            <li><span>Programming Languages</span><br>PYTHON,C++,JAVA</li>
+                            <li><span>Data Structures and Algorithms</span><br>In C++</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+  for(tablink of tablinks){
+    tablink.classList.remove("active");
+  }
+  for(tabcontent of tabcontents){
+    tabcontent.classList.remove("activetab");
+  }
+  event.currentTarget.classList.add("active");
+  document.getElementById(tabname).classList.add("activetab");
+    }
+</script>
+
 </body>
+
 </html>
