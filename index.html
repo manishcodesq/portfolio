@@ -10,7 +10,7 @@
     </style>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-
+    <script src="https://kit.fontawesome.com/d0207c9ae1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -50,30 +50,30 @@
                     </p>
                     <div class="tab-titles">
                         <p class="tab-links active" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"  onclick="opentab('certificates')">Certifications</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-contents activetab" id="skills">
                         <ul>
-                            <li><span>Frontend development</span><br>HTML,CSS,JS</li>
+                            <li><span>Web development</span><br>HTML,CSS,JS</li>
                             <li><span>Programming Languages</span><br>PYTHON,C++,JAVA</li>
-                            <li><span>Data Structures and Algorithms</span><br>In C++</li>
+                            <li><span>Data Structures and Algorithms</span><br>Arrays, Linked Lists, Trees</li>
                         </ul>
 
                     </div>
-                    <div class="tab-contents" id="experience">
+                    <div class="tab-contents" id="certificates">
                         <ul>
-                            <li><span>Frontend development</span><br>HTML,CSS,JS</li>
-                            <li><span>Programming Languages</span><br>PYTHON,CPP,JAVA</li>
-                            <li><span>Data Structures and Algorithms</span><br>In C++</li>
+                            <li><span>Udemy Course</span><br><a href="images/udemy.jpeg" target="_blank">View Udemy Course Certificate</a></li>
+                            <li><span>Simplelearn Course</span><br><a href="images/simplelearn.pdf" target="_blank">View Simplelearn Course Certificate</a></li>
+                            <li><span>EEPE Publication</span><br><a href="images/EEPE-511.jpg" target="_blank">View EEPE Journal Publication Certificate</a></li>
                         </ul>
 
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>Frontend development</span><br>HTML,CSS,JS</li>
-                            <li><span>Programming Languages</span><br>PYTHON,C++,JAVA</li>
-                            <li><span>Data Structures and Algorithms</span><br>In C++</li>
+                            <li><span>Bhartiya Bal Vidya Mandir School</span><br>SSC Score: 95.60%</li>
+                            <li><span>Sant Tukaram Junior College</span><br>CET Score: 96.73%<br>JEE Mains Score: 84.48% <br>HSC Score: 75%</li>
+                            <li><span>Vishwakarma Institue Of Information Technology</span><br>CGPA: 8.0</li>
                         </ul>
 
                     </div>
@@ -81,6 +81,33 @@
             </div>
         </div>
     </div>
+    <!-- ---------Skills-------- -->
+     <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Skills</h1>
+            <div class="service-lists">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Programming Languages</h2>
+                    <p>C++ <br>Python <br>Java <br> Javascript <br></p>
+                    
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Optimized Algorithmic Solutions</h2>
+                    <p>Implementing efficient data structures and algorithms to enhance application performance, scalability, and problem-solving for complex business needs.</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-solid fa-microchip"></i>
+                    <h2>Smart IoT and AI-Driven Solutions</h2>
+                    <p>Building intelligent, data-centric applications that integrate IoT devices and AI techniques to automate processes, improve decision-making, and enhance user interactions.</p>
+                   
+                </div>
+
+            </div>
+        </div>
+     </div>
 <script>
     var tablinks=document.getElementsByClassName("tab-links");
     var tabcontents=document.getElementsByClassName("tab-contents");
