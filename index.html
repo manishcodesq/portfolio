@@ -17,97 +17,168 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="https://as1.ftcdn.net/jpg/04/26/32/06/1000_F_426320629_cnVFShrEVwpOplyQswl8hGRCv8c4XdQz.webp"
+                <img src="images/4545 (2).png"
                     alt="ff" class="logo">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Certificates</a></li>
                     <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact Me</a></li>
                 </ul>
             </nav>
             <div class="header-text">
-                <P>Frontend Developer</P>
-                <h1>Hi,I'm <span>Manish<br>Kulkarni </span></h1>
+                <p id="subtitle"></p> <!-- Dynamic Subtitle -->
+                <h1>Hi, I'm <span>Manish<br>Kulkarni</span></h1>
+                <a href="images/Black and White Simple Business School Graduate Corporate Resume.pdf" class="resume-btn" download>Download Resume</a>
             </div>
         </div>
     </div>
+    
+    
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="about-col1 ">
+                <div class="about-col1">
                     <img src="images/user.jpg" alt="user">
                 </div>
-                <div class="about-col2 ">
+                <div class="about-col2">
                     <h1 class="subtitle">About Me</h1>
-                    <p>Hi, I'm Manish Kulkarni, a second-year Electronics and Telecommunication Engineering student at
-                        Vishwakarma
-                        Institute of Information Technology, Pune. I have a keen interest in software development,
-                        particularly in DSA, web development, and the MERN stack. My focus is on preparing for software
-                        placements and improving my skills in competitive programming.I'm also an active member of my
-                        college's IoT club, contributing as an activity team member.
+                    <p>
+                        Hi, I'm Manish Kulkarni, a second-year Electronics and Telecommunication Engineering student at
+                        Vishwakarma Institute of Information Technology, Pune. I have a keen interest in software development,
+                        particularly in DSA, web development, and the MERN stack. My focus is on preparing for software placements and
+                        improving my skills in competitive programming. I'm also an active member of my college's IoT club, contributing
+                        as an activity team member.
                     </p>
                     <div class="tab-titles">
-                        <p class="tab-links active" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links"  onclick="opentab('certificates')">Certifications</p>
+                        <p class="tab-links active" onclick="opentab('skills')">Competitive Programming</p>
+                        <p class="tab-links" onclick="opentab('certificates')">Certifications</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-contents activetab" id="skills">
                         <ul>
-                            <li><span>Web development</span><br>HTML,CSS,JS</li>
-                            <li><span>Programming Languages</span><br>PYTHON,C++,JAVA</li>
-                            <li><span>Data Structures and Algorithms</span><br>Arrays, Linked Lists, Trees</li>
+                            <li><span>Leetcode:</span> <a href="https://leetcode.com/u/Manish291104/" target="_blank">View My Leetcode Profile</a></li>
+                            <li><span>Hackerrank:</span> <a href="https://www.hackerrank.com/profile/hydraramya111" target="_blank">View My Hackerrank Profile</a></li>
+                            <li><span>Geeks For Geeks:</span> <a href="https://www.geeksforgeeks.org/user/hydrarawqfx/" target="_blank">View My Geeks For Geeks Profile</a></li>
                         </ul>
-
                     </div>
+                    
                     <div class="tab-contents" id="certificates">
                         <ul>
-                            <li><span>Udemy Course</span><br><a href="images/udemy.jpeg" target="_blank">View Udemy Course Certificate</a></li>
-                            <li><span>Simplelearn Course</span><br><a href="images/simplelearn.pdf" target="_blank">View Simplelearn Course Certificate</a></li>
-                            <li><span>EEPE Publication</span><br><a href="images/EEPE-511.jpg" target="_blank">View EEPE Journal Publication Certificate</a></li>
+                            <li><span>Udemy Course:</span> <a href="images/udemy.jpeg" target="_blank">View Udemy Course Certificate</a></li>
+                            <li><span>Simplelearn Course:</span> <a href="images/simplelearn.pdf" target="_blank">View Simplelearn Course Certificate</a></li>
+                            <li><span>EEPE Publication:</span> <a href="images/EEPE-511.jpg" target="_blank">View EEPE Journal Publication Certificate</a></li>
                         </ul>
-
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>Bhartiya Bal Vidya Mandir School</span><br>SSC Score: 95.60%</li>
-                            <li><span>Sant Tukaram Junior College</span><br>CET Score: 96.73%<br>JEE Mains Score: 84.48% <br>HSC Score: 75%</li>
-                            <li><span>Vishwakarma Institue Of Information Technology</span><br>CGPA: 8.0</li>
+                            <li><span>Bhartiya Bal Vidya Mandir School:</span> SSC Score: 95.60%</li>
+                            <li><span>Sant Tukaram Junior College:</span> CET Score: 96.73%, JEE Mains Score: 84.48%, HSC Score: 75%</li>
+                            <li><span>Vishwakarma Institute Of Information Technology:</span> CGPA: 8.0</li>
                         </ul>
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
     <!-- ---------Skills-------- -->
-     <div id="services">
+    <div id="services">
         <div class="container">
-            <h1 class="subtitle">My Skills</h1>
+            <h1 class="subtitle"> Skills And Technologies</h1>
             <div class="service-lists">
+                
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Programming Languages</h2>
-                    <p>C++ <br>Python <br>Java <br> Javascript <br></p>
-                    
+                    <div class="skill-boxes">
+                        <span class="skill-box">C++</span>
+                        <span class="skill-box">Python</span>
+                        <span class="skill-box">Java</span>
+                        <span class="skill-box">JavaScript</span>
+                    </div>
                 </div>
+                
                 <div>
-                    <i class="fa-solid fa-crop-simple"></i>
-                    <h2>Web Developement</h2>
-                    <p>HTML <br>CSS <br> Javascript <br> React.js <br> Node.js </p>
-                    
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Web Development</h2>
+                    <div class="skill-boxes">
+                        <span class="skill-box">HTML</span>
+                        <span class="skill-box">CSS</span>
+                        <span class="skill-box">JavaScript</span>
+                        <span class="skill-box">React.js</span>
+                        <span class="skill-box">Node.js</span>
+                    </div>
                 </div>
                 <div>
                     <i class="fa-solid fa-microchip"></i>
-                    <h2>Data Structures and Algorithms in C++</h2>
-                    <p>Arrays <br>Linkedlist <br>Stack <br>Queue <br>Trees</p>
-                   
+                    <h2>Hardware Skills</h2>
+                    <div class="skill-boxes">
+                        <span class="skill-box">ARDUINO</span>
+                        <span class="skill-box">ARDUINO IDE</span>
+                        <span class="skill-box">Basic Electronics</span>
+                        <span class="skill-box">Embedded Systems</span>
+                        
+                    </div>
                 </div>
-
+                <div>
+                    <i class="fa-solid fa-bug"></i>
+                    <h2>Data Structures & Algorithms</h2>
+                    <div class="skill-boxes">
+                        <span class="skill-box">Arrays</span>
+                        <span class="skill-box">Linked List</span>
+                        <span class="skill-box">Stack</span>
+                        <span class="skill-box">Queue</span>
+                        <span class="skill-box">Trees</span>
+                    </div>
+                </div>
+    
             </div>
         </div>
-     </div>
+    </div>
+
+    <section id="projects">
+        <h2 class="subtitle">Projects</h2>
+        <div class="project-lists">
+            <div class="project-item">
+                <div class="image-placeholder">
+                    <img src="project1.jpg" alt="Project 1">
+                </div>
+                <h3>Project Title 1</h3>
+                <p>Brief description of Project 1.</p>
+            </div>
+            <div class="project-item">
+                <div class="image-placeholder">
+                    <img src="project2.jpg" alt="Project 2">
+                </div>
+                <h3>Project Title 2</h3>
+                <p>Brief description of Project 2.</p>
+            </div>
+            <!-- Add more projects here -->
+        </div>
+    </section>
+    <section id="contact">
+        <h2 class="subtitle">Contact Me</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <input type="text" required>
+                <label>Name</label>
+            </div>
+            <div class="form-group">
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+            <div class="form-group">
+                <textarea rows="4" required></textarea>
+                <label>Message</label>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+        
+    
+    
 <script>
     var tablinks=document.getElementsByClassName("tab-links");
     var tabcontents=document.getElementsByClassName("tab-contents");
@@ -121,7 +192,32 @@
   }
   event.currentTarget.classList.add("active");
   document.getElementById(tabname).classList.add("activetab");
+ 
     }
+</script>
+<script>
+     const subtitles = [
+    "Frontend Developer",
+    "Problem Solver",
+    "Tech Enthusiast"
+];
+
+let index = 0;
+const subtitleElement = document.getElementById("subtitle");
+
+function changeSubtitle() {
+    subtitleElement.style.opacity = "0"; // Fade out
+
+    setTimeout(() => {
+        subtitleElement.textContent = subtitles[index]; // Change text
+        subtitleElement.style.opacity = "1"; // Fade in
+        index = (index + 1) % subtitles.length; // Loop through the array
+    }, 500); // Wait for fade-out transition
+}
+
+changeSubtitle(); // Initial call
+setInterval(changeSubtitle, 2500); // Change text every 2.5 seconds
+
 </script>
 
 </body>
