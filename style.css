@@ -181,7 +181,7 @@ nav ul li a:hover::after{
 }
 
 /* Responsive Improvements */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .row {
         flex-direction: column;
         align-items: center;
@@ -206,7 +206,7 @@ nav ul li a:hover::after{
     .tab-links {
         margin: 10px 0;
     }
-}
+} */
 
 /* ---------skills------ */
 #services {
@@ -424,3 +424,103 @@ button {
 button:hover {
     background: #e60045;
 }
+.menu-toggle {
+    display: none; /* Hide by default */
+    font-size: 30px;
+    cursor: pointer;
+}
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Hero Section */
+@media (max-width: 768px) {
+    .header-text {
+        margin-top: 15%;
+        font-size: 24px;
+        text-align: center;
+    }
+    .header-text h1 {
+        font-size: 40px;
+    }
+}
+
+/* Service Section */
+@media (max-width: 1024px) {
+    .service-lists {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .service-lists {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* About Section */
+@media (max-width: 768px) {
+    .about-col1 img {
+        width: 80%;
+    }
+    .subtitle {
+        font-size: 30px;
+    }
+}
+
+/* Button & Text Adjustments */
+@media (max-width: 480px) {
+    .resume-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show toggle button only on mobile */
+    }
+
+    #nav-links {
+        display: none; /* Hide navigation by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background: black;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;  /* Smooth edges */
+    text-align: center;
+    }
+   /* Adjust individual links */
+#nav-links li {
+    list-style: none;
+    padding: 10px 0;
+}
+
+/* Ensure links are visible */
+#nav-links a {
+    text-decoration: none;
+    color: #ff004f;
+    font-size: 18px;
+    display: block;
+}
+    #nav-links.show {
+        display: flex; /* Show when menu is toggled */
+    }
+}
+

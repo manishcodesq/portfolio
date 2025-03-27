@@ -18,3 +18,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+function toggleMenu() {
+    let menu = document.getElementById("nav-links");
+    if (menu) {
+        menu.classList.toggle("show");
+    } else {
+        console.error("Element with ID 'nav-links' not found!");
+    }
+}
+
