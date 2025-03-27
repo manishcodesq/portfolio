@@ -9,6 +9,7 @@ body{
     background-color: #080808;
     color:#fff;
     line-height: 1.6;
+    padding-top: 80px;
 
 }
 #header{
@@ -27,7 +28,14 @@ body{
 }
 nav{
     display: flex;
+    position: fixed;
+    top: 0; /* Fix at top */
+    width: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
     justify-content: space-between; /* Push items apart */
+    padding: 15px 10px; /* Prevents text from touching edges */
+    z-index: 1000;
     align-items: center;
     flex-wrap: wrap;}
 nav ul li{
@@ -202,7 +210,7 @@ nav ul li a:hover::after{
 
 /* ---------skills------ */
 #services {
-    padding: 50px 0;
+    padding: 80px 0;
     background: #080808;
     color: #fff;
     text-align: center;
@@ -297,7 +305,7 @@ nav ul li a:hover::after{
 }
 
 #projects {
-    padding: 50px 0;
+    padding: 80px 0;
     background: #080808;
     color: #fff;
     text-align: center;
@@ -355,7 +363,7 @@ nav ul li a:hover::after{
 
 
 #contact {
-    padding: 50px 0;
+    padding: 80px 0;
     background: #080808;
     color: #fff;
     text-align: center;
